@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oliver Thompson — Graphic Designer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║   OLIVER THOMPSON — PORTFOLIO                           ║
+  ║   To customise, search for the comments marked:         ║
+  ║   [IMAGE]  — replace src="..." with your image URL      ║
+  ║   [TEXT]   — replace the text content                   ║
+  ║   [LINK]   — replace href="..." with your URL           ║
+  ╚══════════════════════════════════════════════════════════╝
+  -->
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <nav>
+    <!-- [TEXT] Your name as logo -->
+    <span class="nav-logo">Oliver Thompson</span>
+    <ul class="nav-links">
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="works">Work</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       ABOUT PAGE
+  ══════════════════════════════════════════ -->
+  <div id="about" class="page">
+
+    <!-- Hero -->
+    <section class="about-hero">
+      <div class="about-hero-img">
+        <!-- [IMAGE] Your portrait photo -->
+        <img
+          src="images/head_shot.png.png"
+          alt="Oliver Thompson"
+        />
+      </div>
+
+      <div class="about-hero-text">
+        <p class="eyebrow">Graphic Designer</p>
+
+        <!-- [TEXT] Your heading -->
+        <h1 class="about-name">
+          Hi, I'm Oliver—<br><em>I make things look good.</em>
+        </h1>
+
+        <!-- [TEXT] Your bio -->
+        <p class="about-bio">
+          I'm a graphic designer based in Georgia with 10 years of experience
+          across brand identity, editorial, digital, photography, and video production. I care about craft,
+          clarity, and work that lasts.
+        </p>
+
+        <!-- [TEXT] Your availability status -->
+        <p class="about-availability">
+          <span class="status-dot"></span>
+          Available for freelance — 2026
+        </p>
+
+        <!-- [LINK] Your email or contact page -->
+        <a href="olivernewton94@gmail.com" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="about-services">
+      <p class="about-services-label">What I do</p>
+
+      <!-- [TEXT] Edit or add / remove service items below -->
+      <ul class="services-list">
+        <li>Brand Identity</li>
+        <li>Art Direction</li>
+        <li>Editorial Design</li>
+        <li>Typography</li>
+        <li>Packaging</li>
+        <li>Photography</li>
+        <li>Development</li>
+        <li>Videography</li>
+      </ul>
+    </section>
+
+    <!-- Contact strip -->
+    <section class="about-contact">
+      <h2>Let's make something <em>great</em> together.</h2>
+      <!-- [LINK] Your email or contact page -->
+      <a href="olivernewton94@gmail.com" class="btn btn-light">olivernewton94@gmail.com</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- [TEXT] Update year / your name -->
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <!-- [LINK] Your social links -->
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       WORKS PAGE
+  ══════════════════════════════════════════ -->
+  <div id="works" class="page">
+
+    <header class="works-header">
+      <!-- [TEXT] Works page title -->
+      <h1 class="works-title">Work</h1>
+      <!-- [TEXT] Update the year range -->
+      <span class="works-count">2020 – 2025</span>
+    </header>
+
+    <!-- ── PROJECT CARDS ────────────────────── -->
+    <!--
+      HOW TO ADD / EDIT A PROJECT:
+      1. Copy one .project-card block.
+      2. Set data-project="YOUR_ID" (must match the detail page id="detail-YOUR_ID").
+      3. Replace the image src, title, tags, and number.
+      4. Edit the matching detail page further down.
+    -->
+    <section class="projects-grid">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card" data-project="project-1">
+        <div class="project-card-img">
+          <!-- [IMAGE] Project 1 thumbnail -->
+          <img
+            src="images/bb_main.png"
+            alt="Maison Verde Brand Identity"
+          />
+          <div class="project-card-overlay">
+            <span class="view-label">View Project</span>
+          </div>
+        </div>
+        <p class="project-number">01</p>
+        <!-- [TEXT] Project title -->
+        <h2 class="project-card-title">Blue Bridge Coffeehouse — Brand Identity</h2>
+        <!-- [TEXT] Project tags -->
+        <div class="project-card-tags">
+          <span class="tag">Branding</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card" data-project="project-2">
+        <div class="project-card-img">
+          <!-- [IMAGE] Project 2 thumbnail -->
+          <img
+            src="images/Honey Hole (6).png"
+            alt="Drift Magazine Editorial"
+          />
+          <div class="project-card-overlay">
+            <span class="view-label">View Project</span>
+          </div>
+        </div>
+        <p class="project-number">02</p>
+        <h2 class="project-card-title">The Honey Hole</h2>
+        <div class="project-card-tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Typography</span>
+          
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card" data-project="project-3">
+        <div class="project-card-img">
+          <!-- [IMAGE] Project 3 thumbnail -->
+          <img
+            src="images/ro_ (6).png"
+            alt="Halo Skincare Packaging"
+          />
+          <div class="project-card-overlay">
+            <span class="view-label">View Project</span>
+          </div>
+        </div>
+        <p class="project-number">03</p>
+        <h2 class="project-card-title">Red Owl Coffee — Branding</h2>
+        <div class="project-card-tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Art Direction</span>
+          <span class="tag">Packaging</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="project-card" data-project="project-4">
+        <div class="project-card-img">
+          <!-- [IMAGE] Project 4 thumbnail -->
+          <img
+            src="images/Lands_timber (7).png"
+            alt="Epoch Digital Campaign"
+          />
+          <div class="project-card-overlay">
+            <span class="view-label">View Project</span>
+          </div>
+        </div>
+        <p class="project-number">04</p>
+        <h2 class="project-card-title">Lands  & Timber — Branding</h2>
+        <div class="project-card-tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Art Direction</span>
+          <span class="tag">Products</span>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ── SINGLE SHOT CAROUSEL ──────────────── -->
+    <section class="carousel-section">
+      <p class="section-label">Single Shots</p>
+
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+          <!--
+            HOW TO ADD CAROUSEL IMAGES:
+            Copy a .carousel-item div, paste it, change the img src.
+          -->
+          <!-- [IMAGE] Carousel image 4 -->
+          <div class="carousel-item">
+            <img src="images/2.png" alt="Work sample" />
+          </div>
+
+          <!-- [IMAGE] Carousel image 1 -->
+          <div class="carousel-item">
+            <img src="images/UI.PNG" alt="Work sample" />
+          </div>
+
+          <!-- [IMAGE] Carousel image 2 -->
+          <div class="carousel-item">
+            <img src="images/ui2.png" alt="Work sample" />
+          </div>
+
+          <!-- [IMAGE] Carousel image 3 -->
+          <div class="carousel-item">
+            <img src="images/MOSAIC.png" alt="Work sample" />
+          </div>
+
+          <!-- [IMAGE] Carousel image 5 -->
+          <div class="carousel-item">
+            <img src="iMAGES/james_honey.png" alt="Work sample" />
+          </div>
+
+          <!-- [IMAGE] Carousel image 6 -->
+          <div class="carousel-item">
+            <img src="images/UI3.png" alt="Work sample" />
+          </div>
+
+        </div><!-- /carousel-track -->
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-dots"></div>
+        <button class="carousel-btn prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="carousel-btn next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ── VIDEOS SECTION ──────────────────────── -->
+    <section class="videos-section">
+      <p class="section-label">Videos</p>
+
+      <div class="videos-grid">
+        <!--
+          HOW TO ADD / EDIT A VIDEO:
+          Replace VIDEO_ID in the src with your YouTube video ID.
+          e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ
+               use src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          Replace the [TEXT] title and description below each video.
+        -->
+
+        <!-- VIDEO 1 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <!-- [LINK] Replace VIDEO_ID with your YouTube video ID -->
+            <iframe
+              src="https://www.youtube.com/embed/CKrAoJlyqGo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- [TEXT] Video title -->
+          <h3 class="video-title">Hooks Leather</h3>
+          <!-- [TEXT] Short description -->
+          <p class="video-desc">Short Promo Video for a local leather goods company.</p>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <!-- [LINK] Replace VIDEO_ID with your YouTube video ID -->
+            <iframe
+              src="https://www.youtube.com/embed/2rWEqxAaGp8?si=wgbWWj5HAt6d1aMr"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- [TEXT] Video title -->
+          <h3 class="video-title">Wedding Video</h3>
+          <!-- [TEXT] Short description -->
+          <p class="video-desc">Wedding day coverage in south east Georgia</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       DETAIL PAGES  (one per project)
+       id must be "detail-" + the card's data-project value
+  ══════════════════════════════════════════ -->
+
+  <!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║   HOW TO EDIT A DETAIL PAGE                             ║
+  ║   ─────────────────────────────────────────────────────  ║
+  ║   1. Find the block with the matching id                ║
+  ║      e.g. id="detail-project-1"                         ║
+  ║   2. Replace all [IMAGE] and [TEXT] markers              ║
+  ║   3. Add or remove images in .detail-images as needed   ║
+  ║      Add class="full-width" for a wide spanning image   ║
+  ╚══════════════════════════════════════════════════════════╝
+  -->
+
+  <!-- ── DETAIL: PROJECT 1 ─────────────────── -->
+  <div id="detail-project-1" class="detail-page">
+
+    <button class="detail-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      Back to Work
+    </button>
+
+    <div class="detail-hero">
+      <div class="detail-meta">
+        <p class="detail-number">Project 01</p>
+        <!-- [TEXT] Detail page title -->
+        <h1 class="detail-title">Blue Bridge Coffeehouse —<br><em>Brand Identity</em></h1>
+
+        <div class="detail-info-grid">
+          <!-- [TEXT] Project metadata -->
+          <div class="detail-info-item">
+            <label>Client</label>
+            <span>Blue Bridge</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Year</label>
+            <span>2023</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Services</label>
+            <span>Branding</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Industry</label>
+            <span>Food Service</span>
+          </div>
+        </div>
+
+        <!-- [TEXT] Project description -->
+        <p class="detail-description">
+          Blue Bridge Coffeehouse is a locally-owned café rooted in the coastal Georgia community of Kingsland — 
+         <br> The owner wanted a brand that felt unpretentious and genuine — somewhere between a classic American diner counter and a refined specialty coffee shop. Nothing too trendy, nothing too corporate. Just honest, warm, and deeply local.
+        </p>
+      </div>
+
+      <div class="detail-cover">
+        <!-- [IMAGE] Hero image for project 1 -->
+        <img
+          src="images/bb_logo.png"
+          alt="Maison Verde Brand Identity"
+        />
+      </div>
+    </div>
+
+    <!-- [IMAGE] Additional project images (add/remove as needed) -->
+    <div class="detail-images">
+      <img src="images/bb_main.png" alt="" />
+      <img src="images/bb_store.png" alt="" />
+      <!-- full-width image spans both columns -->
+      <img class="full-width full-viewport" src="images/bb_ social.png" alt="" />
+    </div>
+
+    <footer>
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ── DETAIL: PROJECT 2 ─────────────────── -->
+  <div id="detail-project-2" class="detail-page">
+
+    <button class="detail-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      Back to Work
+    </button>
+
+    <div class="detail-hero">
+      <div class="detail-meta">
+        <p class="detail-number">Project 02</p>
+        <h1 class="detail-title">The Honey Hole —<br><em>Branding</em></h1>
+
+        <div class="detail-info-grid">
+          <div class="detail-info-item">
+            <label>Client</label>
+            <span>The Honey Hole</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Year</label>
+            <span>2024</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Services</label>
+            <span>Branding, Typography</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Industry</label>
+            <span>Mobile Bar</span>
+          </div>
+        </div>
+
+        <!-- [TEXT] Project description -->
+        <p class="detail-description">
+          For The Honey Hole, I created a warm and playful brand identity for a mobile beer and wine bar
+           serving weddings and private events. The project included logo design, bee-inspired supporting
+            graphics, color palette, and a brand guide layout. The final identity gives the business a memorable, 
+             event-ready presence across both physical and digital touchpoints.
+        </p>
+      </div>
+
+      <div class="detail-cover">
+        <!-- [IMAGE] Hero image for project 2 -->
+        <img
+          src="images/THE HONEY HOLE.png"
+          alt="Drift Magazine"
+        />
+      </div>
+    </div>
+
+    <div class="detail-images">
+      <!-- [IMAGE] Additional images for project 2 -->
+      <img src="images/Honey Hole (2).png" alt="" />
+      <img src="images/Honey Hole (1).png" alt="" />
+      
+      <img src="images/Honey Hole (5).png" alt="" />
+      <img src="images/Honey Hole (6).png" alt="" />
+    </div>
+
+    <footer>
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ── DETAIL: PROJECT 3 ─────────────────── -->
+  <div id="detail-project-3" class="detail-page">
+
+    <button class="detail-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      Back to Work
+    </button>
+
+    <div class="detail-hero">
+      <div class="detail-meta">
+        <p class="detail-number">Project 03</p>
+        <h1 class="detail-title">Red Owl Coffee —<br><em>Branding</em></h1>
+
+        <div class="detail-info-grid">
+          <div class="detail-info-item">
+            <label>Client</label>
+            <span>Red Owl COffee</span>
+          </div>
+          <div class="detail-info-item">
+            
+          </div>
+          <div class="detail-info-item">
+            <label>Services</label>
+            <span>Branding, Packaging, Art Direction</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Industry</label>
+            <span>Food Service</span>
+          </div>
+        </div>
+
+        <!-- [TEXT] Project description -->
+        <p class="detail-description">
+          Red Owl Coffee Company is a bold coffee brand identity created to feel modern, focused, 
+          and memorable. I developed the full visual system, including the logo, owl mark, color palette, 
+          typography, packaging, signage, gift card, social media graphics, and website concept. The final 
+          brand system creates a consistent experience across digital, print, and physical customer touchpoints.
+        </p>
+      </div>
+
+      <div class="detail-cover">
+        <!-- [IMAGE] Hero image for project 3 -->
+        <img
+          src="images/Red Owl-01.jpg"
+          alt="Halo Skincare Packaging"
+        />
+      </div>
+    </div>
+
+    <div class="detail-images">
+      <!-- [IMAGE] Additional images for project 3 -->
+      <img src="images/ro_ (6).png" alt="" />
+      <img src="images/ro_ (4).png" alt="" />
+      <img class="full-width" src="images/ro_ (2).png" alt="" />
+      <img src="images/ro_ (5).png" alt="" />
+      <img src="images/ro_ (3).png" alt="" />
+    </div>
+
+    <footer>
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ── DETAIL: PROJECT 4 ─────────────────── -->
+  <div id="detail-project-4" class="detail-page">
+
+    <button class="detail-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      Back to Work
+    </button>
+
+    <div class="detail-hero">
+      <div class="detail-meta">
+        <p class="detail-number">Project 04</p>
+        <h1 class="detail-title">Lands & Timber —<br><em>Branding</em></h1>
+
+        <div class="detail-info-grid">
+          <div class="detail-info-item">
+            <label>Client</label>
+            <span>Lands & Timber</span>
+          </div>
+          <div class="detail-info-item">
+           
+          </div>
+          <div class="detail-info-item">
+            <label>Services</label>
+            <span>Branding, Art Direction</span>
+          </div>
+          <div class="detail-info-item">
+            <label>Industry</label>
+            <span>Land Services</span>
+          </div>
+        </div>
+
+        <!-- [TEXT] Project description -->
+        <p class="detail-description">
+          For Lands & Timber Inc., I created a rugged and professional brand identity for a land clearing 
+          company. The project included logo design, color palette, typography, business cards, apparel, signage, 
+          vehicle mockups, social media graphics, and a website concept. The final system gives the company a 
+          consistent visual presence across job sites, marketing materials, and digital platforms.
+        </p>
+      </div>
+
+      <div class="detail-cover">
+        <!-- [IMAGE] Hero image for project 4 -->
+        <img
+          src="images/LANDS AND TIMBER.png"
+          alt="Epoch Digital Campaign"
+        />
+      </div>
+    </div>
+
+    <div class="detail-images">
+      <!-- [IMAGE] Additional images for project 4 -->
+      <img src="images/Lands_timber (3).png" alt="" />
+      <img src="images/Lands_timber (5).png" alt="" />
+      <img class="full-width" src="images/Lands_timber (8).png" alt="" />
+      <img src="images/Lands_timber (7).png" alt="" />
+      <img src="images/Lands_timber (9).png" alt="" />
+    </div>
+
+    <footer>
+      <span class="footer-copy">© 2026 Oliver Thompson</span>
+      <ul class="footer-links">
+        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
+      </ul>
+      <button class="disclaimer-btn">Disclaimer</button>
+    </footer>
+  </div>
+
+
+  <!-- ── DISCLAIMER MODAL ──────────────────────── -->
+  <div id="disclaimerModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <p class="modal-message">A portion of my professional work was completed in secure environments and cannot be shown publicly.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
