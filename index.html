@@ -4,32 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oliver Thompson — Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
-  <!--
-  ╔══════════════════════════════════════════════════════════╗
-  ║   OLIVER THOMPSON — PORTFOLIO                           ║
-  ║   To customise, search for the comments marked:         ║
-  ║   [IMAGE]  — replace src="..." with your image URL      ║
-  ║   [TEXT]   — replace the text content                   ║
-  ║   [LINK]   — replace href="..." with your URL           ║
-  ╚══════════════════════════════════════════════════════════╝
-  -->
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════════
-       NAV
-  ══════════════════════════════════════════ -->
+  <!-- ── NAV ─────────────────────────────────── -->
   <nav>
-    <!-- [TEXT] Your name as logo -->
-    <span class="nav-logo">Oliver Thompson</span>
-    <ul class="nav-links">
-      <li><a href="#" data-page="home">Home</a></li>
-      <li><a href="#" data-page="works">Work</a></li>
-      <li><a href="#" data-page="weddings">Weddings</a></li>
-      <li><a href="#" data-page="about">About</a></li>
-    </ul>
+    <a class="nav-logo" href="#" data-page="home">Oliver Thompson</a>
+    <a class="nav-link" href="#" data-page="work">Work</a>
   </nav>
 
 
@@ -39,856 +24,381 @@
   <div id="home" class="page">
 
     <!-- Hero -->
-    <section class="home-hero">
-      <div class="home-hero-inner">
-        <p class="home-eyebrow">Graphic Designer · Photographer · Videographer</p>
-        <h1 class="home-headline">Visual stories<br>worth <em>remembering.</em></h1>
-        <p class="home-sub">Based in coastal Georgia. Brand identity, photography, and video—for businesses and life's biggest moments.</p>
-        <div class="home-ctas">
-          <a href="#" class="btn btn-light" data-page="works">View My Work</a>
-          <a href="#" class="home-cta-link" data-page="weddings">Wedding Photography &amp; Video →</a>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="cmyk-dots">
+          <span class="c"></span>
+          <span class="m"></span>
+          <span class="y"></span>
+          <span class="k"></span>
         </div>
+        <p class="hero-eyebrow">Graphic Designer · Photographer · Videographer</p>
+        <h1 class="hero-headline">GRAPHIC<br>DESIGN,<br>PHOTOGRAPHY<br>&amp; VIDEO.</h1>
+        <p class="hero-sub">Based in coastal Georgia — brand identity, photography, and video for businesses that want to stand out.</p>
+        <a href="#" class="btn-primary" data-page="work">View Work →</a>
       </div>
     </section>
 
     <!-- Featured Work -->
-    <section class="home-featured">
-      <div class="home-section-head">
-        <p class="section-label">Selected Work</p>
-        <a href="#" class="home-view-all" data-page="works">View All Work →</a>
+    <section class="featured">
+      <div class="featured-head">
+        <span class="section-label">Selected Work</span>
+        <a href="#" class="see-all" data-page="work">See All Work →</a>
       </div>
-      <div class="home-work-grid">
+      <div class="featured-grid">
 
-        <article class="home-work-card" data-page="works">
-          <div class="home-work-img">
-            <img src="images/image-02.png" alt="Blue Bridge Coffeehouse" />
+        <article class="featured-card" data-page="work">
+          <div class="card-img">
+            <img src="images/blue-bridge/image-02.png" alt="Blue Bridge Coffeehouse" />
           </div>
-          <div class="home-work-info">
+          <div class="card-info">
             <h3>Blue Bridge Coffeehouse</h3>
-            <span class="tag">Branding</span>
-          </div>
-        </article>
-
-        <article class="home-work-card" data-page="works">
-          <div class="home-work-img">
-            <img src="images/image-03.png" alt="The Honey Hole" />
-          </div>
-          <div class="home-work-info">
-            <h3>The Honey Hole</h3>
-            <span class="tag">Branding</span>
-          </div>
-        </article>
-
-        <article class="home-work-card" data-page="works">
-          <div class="home-work-img">
-            <img src="images/image-24.png" alt="Lands &amp; Timber" />
-          </div>
-          <div class="home-work-info">
-            <h3>Lands &amp; Timber</h3>
-            <span class="tag">Branding</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Wedding Teaser -->
-    <section class="home-wedding-teaser">
-      <div class="home-wedding-inner">
-        <p class="home-wedding-label">Photography &amp; Video</p>
-        <h2 class="home-wedding-headline">Capturing life's<br><em>biggest moments.</em></h2>
-        <p class="home-wedding-body">Wedding photography and videography, engagements, and maternity sessions—serving coastal Georgia and beyond.</p>
-        <a href="#" class="btn btn-light" data-page="weddings">Wedding &amp; Photography Services</a>
-      </div>
-    </section>
-
-    <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
-    </footer>
-  </div>
-
-
-  <!-- ══════════════════════════════════════════
-       ABOUT PAGE
-  ══════════════════════════════════════════ -->
-  <div id="about" class="page">
-
-    <!-- Hero -->
-    <section class="about-hero">
-      <div class="about-hero-img">
-        <!-- [IMAGE] Your portrait photo -->
-        <img
-          src="images/image-01.png"
-          alt="Oliver Thompson"
-        />
-      </div>
-
-      <div class="about-hero-text">
-        <p class="eyebrow">Graphic Designer</p>
-
-        <!-- [TEXT] Your heading -->
-        <h1 class="about-name">
-          Hi, I'm Oliver—<br><em>I make things look good.</em>
-        </h1>
-
-        <!-- [TEXT] Your bio -->
-        <p class="about-bio">
-          I'm a graphic designer based in Georgia with 10 years of experience
-          across brand identity, editorial, digital, photography, and video production. I care about craft,
-          clarity, and work that lasts.
-        </p>
-
-        <!-- [TEXT] Your availability status -->
-        <p class="about-availability">
-          <span class="status-dot"></span>
-          Available for freelance — 2026
-        </p>
-
-        <!-- [LINK] Your email or contact page -->
-        <a href="mailto:olivernewton94@gmail.com" class="btn">Get in touch</a>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="about-services">
-      <p class="about-services-label">What I do</p>
-
-      <!-- [TEXT] Edit or add / remove service items below -->
-      <ul class="services-list">
-        <li>Brand Identity</li>
-        <li>Art Direction</li>
-        <li>Editorial Design</li>
-        <li>Typography</li>
-        <li>Packaging</li>
-        <li>Photography</li>
-        <li>Development</li>
-        <li>Videography</li>
-      </ul>
-    </section>
-
-    <!-- Contact strip -->
-    <section class="about-contact">
-      <h2>Let's make something <em>great</em> together.</h2>
-      <!-- [LINK] Your email or contact page -->
-      <a href="mailto:olivernewton94@gmail.com" class="btn btn-light">olivernewton94@gmail.com</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <!-- [TEXT] Update year / your name -->
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <!-- [LINK] Your social links -->
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
-    </footer>
-  </div>
-
-
-  <!-- ══════════════════════════════════════════
-       WORKS PAGE
-  ══════════════════════════════════════════ -->
-  <div id="works" class="page">
-
-    <header class="works-header">
-      <!-- [TEXT] Works page title -->
-      <h1 class="works-title">Work</h1>
-      <!-- [TEXT] Update the year range -->
-      <span class="works-count">2020 – 2025</span>
-    </header>
-
-    <!-- ── PROJECT CARDS ────────────────────── -->
-    <!--
-      HOW TO ADD / EDIT A PROJECT:
-      1. Copy one .project-card block.
-      2. Set data-project="YOUR_ID" (must match the detail page id="detail-YOUR_ID").
-      3. Replace the image src, title, tags, and number.
-      4. Edit the matching detail page further down.
-    -->
-    <section class="projects-grid">
-
-      <!-- PROJECT 1 -->
-      <article class="project-card" data-project="project-1">
-        <div class="project-card-img">
-          <!-- [IMAGE] Project 1 thumbnail -->
-          <img
-            src="images/image-02.png"
-            alt="Maison Verde Brand Identity"
-          />
-          <div class="project-card-overlay">
-            <span class="view-label">View Project</span>
-          </div>
-        </div>
-        <p class="project-number">01</p>
-        <!-- [TEXT] Project title -->
-        <h2 class="project-card-title">Blue Bridge Coffeehouse — Brand Identity</h2>
-        <!-- [TEXT] Project tags -->
-        <div class="project-card-tags">
-          <span class="tag">Branding</span>
-        </div>
-      </article>
-
-      <!-- PROJECT 2 -->
-      <article class="project-card" data-project="project-2">
-        <div class="project-card-img">
-          <!-- [IMAGE] Project 2 thumbnail -->
-          <img
-            src="images/image-03.png"
-            alt="Drift Magazine Editorial"
-          />
-          <div class="project-card-overlay">
-            <span class="view-label">View Project</span>
-          </div>
-        </div>
-        <p class="project-number">02</p>
-        <h2 class="project-card-title">The Honey Hole</h2>
-        <div class="project-card-tags">
-          <span class="tag">Branding</span>
-          <span class="tag">Typography</span>
-          
-        </div>
-      </article>
-
-      <!-- PROJECT 3 -->
-      <article class="project-card" data-project="project-3">
-        <div class="project-card-img">
-          <!-- [IMAGE] Project 3 thumbnail -->
-          <img
-            src="images/image-04.png"
-            alt="Halo Skincare Packaging"
-          />
-          <div class="project-card-overlay">
-            <span class="view-label">View Project</span>
-          </div>
-        </div>
-        <p class="project-number">03</p>
-        <h2 class="project-card-title">Red Owl Coffee — Branding</h2>
-        <div class="project-card-tags">
-          <span class="tag">Branding</span>
-          <span class="tag">Art Direction</span>
-          <span class="tag">Packaging</span>
-        </div>
-      </article>
-
-      <!-- PROJECT 4 -->
-      <article class="project-card" data-project="project-4">
-        <div class="project-card-img">
-          <!-- [IMAGE] Project 4 thumbnail -->
-          <img
-            src="images/image-05.png"
-            alt="Epoch Digital Campaign"
-          />
-          <div class="project-card-overlay">
-            <span class="view-label">View Project</span>
-          </div>
-        </div>
-        <p class="project-number">04</p>
-        <h2 class="project-card-title">Lands  & Timber — Branding</h2>
-        <div class="project-card-tags">
-          <span class="tag">Branding</span>
-          <span class="tag">Art Direction</span>
-          <span class="tag">Products</span>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- ── SINGLE SHOT CAROUSEL ──────────────── -->
-    <section class="carousel-section">
-      <p class="section-label">Single Shots</p>
-
-      <div class="carousel-track-wrapper">
-        <div class="carousel-track">
-          <!--
-            HOW TO ADD CAROUSEL IMAGES:
-            Copy a .carousel-item div, paste it, change the img src.
-          -->
-          <!-- [IMAGE] Carousel image 4 -->
-          <div class="carousel-item">
-            <img src="images/image-06.png" alt="Work sample" />
-          </div>
-
-          <!-- [IMAGE] Carousel image 1 -->
-          <div class="carousel-item">
-            <img src="images/image-07.png" alt="Work sample" />
-          </div>
-
-          <!-- [IMAGE] Carousel image 2 -->
-          <div class="carousel-item">
-            <img src="images/image-08.png" alt="Work sample" />
-          </div>
-
-          <!-- [IMAGE] Carousel image 3 -->
-          <div class="carousel-item">
-            <img src="images/image-09.png" alt="Work sample" />
-          </div>
-
-          <!-- [IMAGE] Carousel image 5 -->
-          <div class="carousel-item">
-            <img src="images/image-10.png" alt="Work sample" />
-          </div>
-
-          <!-- [IMAGE] Carousel image 6 -->
-          <div class="carousel-item">
-            <img src="images/image-11.png" alt="Work sample" />
-          </div>
-
-        </div><!-- /carousel-track -->
-      </div>
-
-      <div class="carousel-controls">
-        <div class="carousel-dots"></div>
-        <button class="carousel-btn prev" aria-label="Previous">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M15 18l-6-6 6-6"/>
-          </svg>
-        </button>
-        <button class="carousel-btn next" aria-label="Next">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M9 18l6-6-6-6"/>
-          </svg>
-        </button>
-      </div>
-    </section>
-
-    <!-- ── VIDEOS SECTION ──────────────────────── -->
-    <section class="videos-section">
-      <p class="section-label">Videos</p>
-
-      <div class="videos-grid">
-        <!--
-          HOW TO ADD / EDIT A VIDEO:
-          Replace VIDEO_ID in the src with your YouTube video ID.
-          e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ
-               use src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          Replace the [TEXT] title and description below each video.
-        -->
-
-        <!-- VIDEO 1 -->
-        <div class="video-card">
-          <div class="video-wrapper">
-            <button class="video-facade" data-video-id="CKrAoJlyqGo" aria-label="Play video">
-              <img src="https://img.youtube.com/vi/CKrAoJlyqGo/maxresdefault.jpg" alt="Hooks Leather promo video" />
-              <span class="video-play-icon"></span>
-            </button>
-          </div>
-          <!-- [TEXT] Video title -->
-          <h3 class="video-title">Hooks Leather</h3>
-          <!-- [TEXT] Short description -->
-          <p class="video-desc">Short Promo Video for a local leather goods company.</p>
-        </div>
-
-        
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
-    </footer>
-  </div>
-
-
-  <!-- ══════════════════════════════════════════
-       WEDDINGS PAGE
-  ══════════════════════════════════════════ -->
-  <div id="weddings" class="page">
-
-    <!-- Gallery -->
-    <section class="wedding-gallery">
-      <div class="wedding-gallery-header">
-        <p class="eyebrow">Photography &amp; Videography</p>
-        <h1 class="wedding-gallery-title">Weddings &amp; Portraits</h1>
-        <p class="wedding-gallery-sub">Coastal Georgia · Southeast &amp; Beyond</p>
-      </div>
-
-      <div class="wedding-gallery-hero">
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-13.jpg" alt="Wedding Photography" /></div>
-      </div>
-
-      <div class="wedding-gallery-grid">
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-02.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-03.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-04.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-05.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-06.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-07.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-08.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-09.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-10.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-11.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-12.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-01.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-14.jpg" alt="" /></div>
-        <div class="wedding-img-slot"><img src="images/weddings/wedding-15.jpg" alt="" /></div>
-      </div>
-    </section>
-
-    <!-- Videos -->
-    <section class="videos-section">
-      <p class="section-label">Video</p>
-      <div class="videos-grid">
-
-        <div class="video-card">
-          <div class="video-wrapper">
-            <button class="video-facade" data-video-id="PJJxkVrOjiA" aria-label="Play video">
-              <img src="https://img.youtube.com/vi/PJJxkVrOjiA/maxresdefault.jpg" alt="Wedding video" />
-              <span class="video-play-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="video-wrapper">
-            <button class="video-facade" data-video-id="2rWEqxAaGp8" aria-label="Play video">
-              <img src="https://img.youtube.com/vi/2rWEqxAaGp8/maxresdefault.jpg" alt="Wedding video" />
-              <span class="video-play-icon"></span>
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Services + Pricing -->
-    <section class="wedding-services">
-      <div class="wedding-services-header">
-        <p class="section-label">What I Offer</p>
-        <h2>Photography &amp; Video<br><em>for Every Chapter</em></h2>
-      </div>
-      <!-- [TEXT] Update prices and package details below -->
-      <div class="wedding-pricing-grid">
-
-        <div class="pricing-card">
-          <p class="pricing-label">Wedding Photography</p>
-          <p class="pricing-price">Starting at $4,500</p>
-          <ul class="pricing-list">
-            <li>Full day coverage (up to 8 hrs)</li>
-            <li>Edited digital gallery</li>
-            <li>Online delivery within 6 weeks</li>
-          </ul>
-          <button class="btn" data-scroll="wedding-contact">Inquire</button>
-        </div>
-
-        <div class="pricing-card">
-          <p class="pricing-label">Wedding Video</p>
-          <p class="pricing-price">Starting at $4,000</p>
-          <ul class="pricing-list">
-            <li>Full day coverage</li>
-            <li>Highlight film (3–5 min)</li>
-            <li>Delivered within 8 weeks</li>
-          </ul>
-          <button class="btn" data-scroll="wedding-contact">Inquire</button>
-        </div>
-
-        <div class="pricing-card">
-          <p class="pricing-label">Engagements</p>
-          <p class="pricing-price">Starting at $400</p>
-          <ul class="pricing-list">
-            <li>1–2 hour session</li>
-            <li>Location of your choice</li>
-            <li>Edited digital gallery</li>
-            <li>Online delivery within 3 weeks</li>
-          </ul>
-          <button class="btn" data-scroll="wedding-contact">Inquire</button>
-        </div>
-
-        <div class="pricing-card">
-          <p class="pricing-label">Maternity</p>
-          <p class="pricing-price">Starting at $400</p>
-          <ul class="pricing-list">
-            <li>1 hour session</li>
-            <li>Edited digital gallery</li>
-            <li>Online delivery within 2 weeks</li>
-          </ul>
-          <button class="btn" data-scroll="wedding-contact">Inquire</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Inquiry Form -->
-    <!--
-      To activate this form: sign up at formspree.io, create a form,
-      and replace YOUR_FORM_ID in the action attribute below.
-    -->
-    <section class="wedding-contact" id="wedding-contact">
-      <div class="wedding-contact-header">
-        <p class="section-label">Get In Touch</p>
-        <h2>Let's Plan <em>Your Day</em></h2>
-        <p class="wedding-contact-sub">Fill out the form below and I'll be in touch within 48 hours.</p>
-      </div>
-      <form class="wedding-form" action="https://formspree.io/f/mlgzlgda" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="w-name">Full Name</label>
-            <input type="text" id="w-name" name="name" placeholder="Jane &amp; John Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="w-email">Email Address</label>
-            <input type="email" id="w-email" name="email" placeholder="you@example.com" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="w-phone">Phone Number</label>
-            <input type="tel" id="w-phone" name="phone" placeholder="(555) 000-0000" />
-          </div>
-          <div class="form-group">
-            <label for="w-service">Service</label>
-            <select id="w-service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option>Wedding Photography</option>
-              <option>Wedding Video</option>
-              <option>Photography + Video Bundle</option>
-              <option>Engagement Session</option>
-              <option>Maternity Session</option>
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="w-date">Event Date</label>
-            <input type="date" id="w-date" name="date" />
-          </div>
-          <div class="form-group">
-            <label for="w-location">Venue / Location</label>
-            <input type="text" id="w-location" name="location" placeholder="City, State or Venue Name" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="w-message">Tell Me About Your Day</label>
-          <textarea id="w-message" name="message" rows="5" placeholder="Share any details — venue, style, vision, questions..."></textarea>
-        </div>
-        <button type="submit" class="btn">Send Inquiry</button>
-      </form>
-    </section>
-
-    <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
-    </footer>
-  </div>
-
-
-  <!-- ══════════════════════════════════════════
-       DETAIL PAGES  (one per project)
-       id must be "detail-" + the card's data-project value
-  ══════════════════════════════════════════ -->
-
-  <!--
-  ╔══════════════════════════════════════════════════════════╗
-  ║   HOW TO EDIT A DETAIL PAGE                             ║
-  ║   ─────────────────────────────────────────────────────  ║
-  ║   1. Find the block with the matching id                ║
-  ║      e.g. id="detail-project-1"                         ║
-  ║   2. Replace all [IMAGE] and [TEXT] markers              ║
-  ║   3. Add or remove images in .detail-images as needed   ║
-  ║      Add class="full-width" for a wide spanning image   ║
-  ╚══════════════════════════════════════════════════════════╝
-  -->
-
-  <!-- ── DETAIL: PROJECT 1 ─────────────────── -->
-  <div id="detail-project-1" class="detail-page">
-
-    <button class="detail-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-      Back to Work
-    </button>
-
-    <div class="detail-hero">
-      <div class="detail-meta">
-        <p class="detail-number">Project 01</p>
-        <!-- [TEXT] Detail page title -->
-        <h1 class="detail-title">Blue Bridge Coffeehouse —<br><em>Brand Identity</em></h1>
-
-        <div class="detail-info-grid">
-          <!-- [TEXT] Project metadata -->
-          <div class="detail-info-item">
-            <label>Client</label>
-            <span>Blue Bridge</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Year</label>
-            <span>2023</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Services</label>
             <span>Branding</span>
           </div>
-          <div class="detail-info-item">
-            <label>Industry</label>
-            <span>Food Service</span>
+        </article>
+
+        <article class="featured-card" data-page="work">
+          <div class="card-img">
+            <img src="images/red-owl/image-04.png" alt="Red Owl Coffee" />
           </div>
-        </div>
+          <div class="card-info">
+            <h3>Red Owl Coffee</h3>
+            <span>Branding &amp; Packaging</span>
+          </div>
+        </article>
 
-        <!-- [TEXT] Project description -->
-        <p class="detail-description">
-          Blue Bridge Coffeehouse is a locally-owned café rooted in the coastal Georgia community of Kingsland — 
-         <br> The owner wanted a brand that felt unpretentious and genuine — somewhere between a classic American diner counter and a refined specialty coffee shop. Nothing too trendy, nothing too corporate. Just honest, warm, and deeply local.
-        </p>
+        <article class="featured-card" data-page="work">
+          <div class="card-img">
+            <img src="images/james-honey/image-honey-1.png" alt="James Honey Company" />
+          </div>
+          <div class="card-info">
+            <h3>James Honey Company</h3>
+            <span>Branding</span>
+          </div>
+        </article>
+
       </div>
+    </section>
 
-      <div class="detail-cover">
-        <!-- [IMAGE] Hero image for project 1 -->
-        <img
-          src="images/image-12.png"
-          alt="Maison Verde Brand Identity"
-        />
+    <!-- About -->
+    <section class="about-section">
+      <div class="about-img">
+        <img src="images/oliver-headshot-01.png" alt="Oliver Thompson" />
       </div>
-    </div>
-
-    <!-- [IMAGE] Additional project images (add/remove as needed) -->
-    <div class="detail-images">
-      <img src="images/image-02.png" alt="" />
-      <img src="images/image-13.png" alt="" />
-      <!-- full-width image spans both columns -->
-      <img class="full-width full-viewport" src="images/image-14.png" alt="" />
-    </div>
+      <div class="about-text">
+        <span class="section-label">About</span>
+        <h2>DESIGNER.<br>PHOTOGRAPHER.<br>STORYTELLER.</h2>
+        <p>I'm Oliver Thompson — a graphic designer based in coastal Georgia with 10 years of experience across brand identity, editorial, digital, photography, and video production. I care about craft, clarity, and work that lasts.</p>
+        <ul class="services-list">
+          <li>Brand Identity</li>
+          <li>Art Direction</li>
+          <li>Photography</li>
+          <li>Videography</li>
+          <li>Packaging</li>
+          <li>Typography</li>
+        </ul>
+      </div>
+    </section>
 
     <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
     </footer>
   </div>
 
 
-  <!-- ── DETAIL: PROJECT 2 ─────────────────── -->
-  <div id="detail-project-2" class="detail-page">
+  <!-- ══════════════════════════════════════════
+       WORK PAGE
 
-    <button class="detail-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-      Back to Work
-    </button>
+  HOW TO ADD A NEW PROJECT
+  ────────────────────────────────────────────
+  1. Create a folder: images/your-project-name/
+  2. Add a thumbnail image and all case study images to it
+  3. Copy one .work-card block below and update:
+       - data-case="case-your-project-name"
+       - img src, alt, title, and type text
+  4. Scroll to the bottom of this file and copy
+     an existing case study block. Update:
+       - id="case-your-project-name"
+       - All text, image paths, and layout
+  That's it — the JS handles everything else.
+  ────────────────────────────────────────────
+  ══════════════════════════════════════════ -->
+  <div id="work" class="page">
 
-    <div class="detail-hero">
-      <div class="detail-meta">
-        <p class="detail-number">Project 02</p>
-        <h1 class="detail-title">The Honey Hole —<br><em>Branding</em></h1>
+    <header class="work-header">
+      <h1>WORK</h1>
+    </header>
 
-        <div class="detail-info-grid">
-          <div class="detail-info-item">
-            <label>Client</label>
-            <span>The Honey Hole</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Year</label>
-            <span>2024</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Services</label>
-            <span>Branding, Typography</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Industry</label>
-            <span>Mobile Bar</span>
-          </div>
+    <section class="work-grid">
+
+      <!-- PROJECT 1 — BLUE BRIDGE COFFEEHOUSE -->
+      <article class="work-card" data-case="case-blue-bridge">
+        <div class="card-img">
+          <img src="images/blue-bridge/image-02.png" alt="Blue Bridge Coffeehouse" />
+          <div class="card-overlay"><span>View Project</span></div>
         </div>
+        <div class="card-info">
+          <h3>Blue Bridge Coffeehouse</h3>
+          <span>Branding</span>
+        </div>
+      </article>
 
-        <!-- [TEXT] Project description -->
-        <p class="detail-description">
-          For The Honey Hole, I created a warm and playful brand identity for a mobile beer and wine bar
-           serving weddings and private events. The project included logo design, bee-inspired supporting
-            graphics, color palette, and a brand guide layout. The final identity gives the business a memorable, 
-             event-ready presence across both physical and digital touchpoints.
-        </p>
-      </div>
+      <!-- PROJECT 2 — RED OWL COFFEE -->
+      <article class="work-card" data-case="case-red-owl">
+        <div class="card-img">
+          <img src="images/red-owl/image-04.png" alt="Red Owl Coffee" />
+          <div class="card-overlay"><span>View Project</span></div>
+        </div>
+        <div class="card-info">
+          <h3>Red Owl Coffee</h3>
+          <span>Branding · Packaging · Art Direction</span>
+        </div>
+      </article>
 
-      <div class="detail-cover">
-        <!-- [IMAGE] Hero image for project 2 -->
-        <img
-          src="images/image-15.png"
-          alt="Drift Magazine"
-        />
-      </div>
-    </div>
+      <!-- PROJECT 3 — LANDS & TIMBER -->
+      <article class="work-card" data-case="case-lands-timber">
+        <div class="card-img">
+          <img src="images/lands-timber/image-24.png" alt="Lands &amp; Timber" />
+          <div class="card-overlay"><span>View Project</span></div>
+        </div>
+        <div class="card-info">
+          <h3>Lands &amp; Timber</h3>
+          <span>Branding · Art Direction</span>
+        </div>
+      </article>
 
-    <div class="detail-images">
-      <!-- [IMAGE] Additional images for project 2 -->
-      <img src="images/image-16.png" alt="" />
-      <img src="images/image-17.png" alt="" />
+      <!-- PROJECT 4 — JAMES HONEY COMPANY -->
+      <article class="work-card" data-case="case-james-honey">
+        <div class="card-img">
+          <img src="images/james-honey/image-honey-1.png" alt="James Honey Company" />
+          <div class="card-overlay"><span>View Project</span></div>
+        </div>
+        <div class="card-info">
+          <h3>James Honey Company</h3>
+          <span>Branding</span>
+        </div>
+      </article>
 
-      <img src="images/image-18.png" alt="" />
-      <img src="images/image-03.png" alt="" />
-    </div>
+      <!-- PROJECT 5 — HOOKS CRAFTED LEATHER -->
+      <article class="work-card" data-case="case-hooks">
+        <div class="card-img">
+          <img src="images/hooks/hooks-still.jpg" alt="Hooks Crafted Leather" />
+          <div class="card-overlay"><span>View Project</span></div>
+        </div>
+        <div class="card-info">
+          <h3>Hooks Crafted Leather</h3>
+          <span>Photography · Videography</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 6 — THE HONEY HOLE -->
+      <article class="work-card" data-case="case-honey-hole">
+        <div class="card-img">
+          <img src="images/the-honey-hole/image-15.png" alt="The Honey Hole" />
+          <div class="card-overlay"><span>View Project</span></div>
+        </div>
+        <div class="card-info">
+          <h3>The Honey Hole</h3>
+          <span>Branding</span>
+        </div>
+      </article>
+
+    </section>
 
     <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
     </footer>
   </div>
 
 
-  <!-- ── DETAIL: PROJECT 3 ─────────────────── -->
-  <div id="detail-project-3" class="detail-page">
+  <!-- ══════════════════════════════════════════
+       CASE STUDY PAGES
+       One block per project — id must match the
+       work-card's data-case value above.
+  ══════════════════════════════════════════ -->
 
-    <button class="detail-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-      Back to Work
-    </button>
-
-    <div class="detail-hero">
-      <div class="detail-meta">
-        <p class="detail-number">Project 03</p>
-        <h1 class="detail-title">Red Owl Coffee —<br><em>Branding</em></h1>
-
-        <div class="detail-info-grid">
-          <div class="detail-info-item">
-            <label>Client</label>
-            <span>Red Owl COffee</span>
-          </div>
-          <div class="detail-info-item">
-            
-          </div>
-          <div class="detail-info-item">
-            <label>Services</label>
-            <span>Branding, Packaging, Art Direction</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Industry</label>
-            <span>Food Service</span>
-          </div>
-        </div>
-
-        <!-- [TEXT] Project description -->
-        <p class="detail-description">
-          Red Owl Coffee Company is a bold coffee brand identity created to feel modern, focused, 
-          and memorable. I developed the full visual system, including the logo, owl mark, color palette, 
-          typography, packaging, signage, gift card, social media graphics, and website concept. The final 
-          brand system creates a consistent experience across digital, print, and physical customer touchpoints.
-        </p>
-      </div>
-
-      <div class="detail-cover">
-        <!-- [IMAGE] Hero image for project 3 -->
-        <img
-          src="images/image-19.jpg"
-          alt="Halo Skincare Packaging"
-        />
-      </div>
+  <!-- CASE: BLUE BRIDGE COFFEEHOUSE ─────────── -->
+  <div id="case-blue-bridge" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
     </div>
-
-    <div class="detail-images">
-      <!-- [IMAGE] Additional images for project 3 -->
-      <img src="images/image-04.png" alt="" />
-      <img src="images/image-20.png" alt="" />
-      <img class="full-width" src="images/image-21.png" alt="" />
-      <img src="images/image-22.png" alt="" />
-      <img src="images/image-23.png" alt="" />
+    <div class="case-hero">
+      <span class="section-label">Branding</span>
+      <h1>Blue Bridge<br>Coffeehouse</h1>
+      <p class="case-desc">Blue Bridge Coffeehouse is a locally-owned café rooted in the coastal Georgia community of Kingsland. The owner wanted a brand that felt unpretentious and genuine — somewhere between a classic American diner counter and a refined specialty coffee shop. Nothing too trendy, nothing too corporate. Just honest, warm, and deeply local.</p>
     </div>
-
+    <div class="case-images">
+      <img class="case-img-full" src="images/blue-bridge/image-02.png" alt="" />
+      <div class="case-img-grid">
+        <img src="images/blue-bridge/image-12.png" alt="" />
+        <img src="images/blue-bridge/image-14.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/blue-bridge/image-29.png" alt="" />
+    </div>
     <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
     </footer>
   </div>
 
 
-  <!-- ── DETAIL: PROJECT 4 ─────────────────── -->
-  <div id="detail-project-4" class="detail-page">
-
-    <button class="detail-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-      Back to Work
-    </button>
-
-    <div class="detail-hero">
-      <div class="detail-meta">
-        <p class="detail-number">Project 04</p>
-        <h1 class="detail-title">Lands & Timber —<br><em>Branding</em></h1>
-
-        <div class="detail-info-grid">
-          <div class="detail-info-item">
-            <label>Client</label>
-            <span>Lands & Timber</span>
-          </div>
-          <div class="detail-info-item">
-           
-          </div>
-          <div class="detail-info-item">
-            <label>Services</label>
-            <span>Branding, Art Direction</span>
-          </div>
-          <div class="detail-info-item">
-            <label>Industry</label>
-            <span>Land Services</span>
-          </div>
-        </div>
-
-        <!-- [TEXT] Project description -->
-        <p class="detail-description">
-          For Lands & Timber Inc., I created a rugged and professional brand identity for a land clearing 
-          company. The project included logo design, color palette, typography, business cards, apparel, signage, 
-          vehicle mockups, social media graphics, and a website concept. The final system gives the company a 
-          consistent visual presence across job sites, marketing materials, and digital platforms.
-        </p>
-      </div>
-
-      <div class="detail-cover">
-        <!-- [IMAGE] Hero image for project 4 -->
-        <img
-          src="images/image-24.png"
-          alt="Epoch Digital Campaign"
-        />
-      </div>
+  <!-- CASE: RED OWL COFFEE ───────────────────── -->
+  <div id="case-red-owl" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
     </div>
-
-    <div class="detail-images">
-      <!-- [IMAGE] Additional images for project 4 -->
-      <img src="images/image-25.png" alt="" />
-      <img src="images/image-26.png" alt="" />
-      <img class="full-width" src="images/image-27.png" alt="" />
-      <img src="images/image-05.png" alt="" />
-      <img src="images/image-28.png" alt="" />
+    <div class="case-hero">
+      <span class="section-label">Branding · Packaging · Art Direction</span>
+      <h1>Red Owl<br>Coffee</h1>
+      <p class="case-desc">Red Owl Coffee Company is a bold coffee brand identity created to feel modern, focused, and memorable. I developed the full visual system — logo, owl mark, color palette, typography, packaging, signage, gift card, social media graphics, and website concept. The final brand system creates a consistent experience across digital, print, and physical customer touchpoints.</p>
     </div>
-
+    <div class="case-images">
+      <img class="case-img-full" src="images/red-owl/image-19.jpg" alt="" />
+      <div class="case-img-grid">
+        <img src="images/red-owl/image-20.png" alt="" />
+        <img src="images/red-owl/image-21.png" alt="" />
+      </div>
+      <div class="case-img-grid">
+        <img src="images/red-owl/image-22.png" alt="" />
+        <img src="images/red-owl/image-23.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/red-owl/image-04.png" alt="" />
+    </div>
     <footer>
-      <span class="footer-copy">© 2026 Oliver Thompson</span>
-      <ul class="footer-links">
-        <li><a href="https://dribbble.com/olivernewtonthompson" target="_blank" rel="noopener">DRIBBBLE</a></li>
-      </ul>
-      <button class="disclaimer-btn">Disclaimer</button>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
     </footer>
   </div>
 
 
-  <!-- ── DISCLAIMER MODAL ──────────────────────── -->
-  <div id="disclaimerModal" class="modal-overlay" aria-hidden="true">
-    <div class="modal-box" role="dialog" aria-modal="true">
-      <button class="modal-close" aria-label="Close">&times;</button>
-      <p class="modal-message">A portion of my professional work was completed in secure environments and cannot be shown publicly.</p>
+  <!-- CASE: LANDS & TIMBER ───────────────────── -->
+  <div id="case-lands-timber" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
     </div>
+    <div class="case-hero">
+      <span class="section-label">Branding · Art Direction</span>
+      <h1>Lands &amp;<br>Timber</h1>
+      <p class="case-desc">For Lands &amp; Timber Inc., I created a rugged and professional brand identity for a land clearing company. The project included logo design, color palette, typography, business cards, apparel, signage, vehicle mockups, social media graphics, and a website concept. The final system gives the company a consistent visual presence across job sites, marketing materials, and digital platforms.</p>
+    </div>
+    <div class="case-images">
+      <img class="case-img-full" src="images/lands-timber/image-24.png" alt="" />
+      <div class="case-img-grid">
+        <img src="images/lands-timber/image-25.png" alt="" />
+        <img src="images/lands-timber/image-26.png" alt="" />
+      </div>
+      <div class="case-img-grid">
+        <img src="images/lands-timber/image-27.png" alt="" />
+        <img src="images/lands-timber/image-28.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/lands-timber/image-31.png" alt="" />
+      <div class="case-img-grid">
+        <img src="images/lands-timber/image-32.png" alt="" />
+        <img src="images/lands-timber/image-33.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/lands-timber/image-34.png" alt="" />
+    </div>
+    <footer>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
+    </footer>
   </div>
+
+
+  <!-- CASE: JAMES HONEY COMPANY ─────────────── -->
+  <div id="case-james-honey" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
+    </div>
+    <div class="case-hero">
+      <span class="section-label">Branding</span>
+      <h1>James Honey<br>Company</h1>
+      <p class="case-desc">For James Honey Company, we developed a warm, rustic brand identity that reflects their roots as a small, locally owned honey business with generations of beekeeping history. The branding focused on creating a trustworthy, handcrafted feel through a bold logo, natural color palette, bee iconography, and supporting materials that communicate the quality and authenticity of their raw honey.</p>
+    </div>
+    <div class="case-images">
+      <img class="case-img-full" src="images/james-honey/image-honey-1.png" alt="" />
+      <div class="case-img-grid">
+        <img src="images/james-honey/image-honey-2.png" alt="" />
+        <img src="images/james-honey/image-honey-3.png" alt="" />
+      </div>
+      <div class="case-img-grid">
+        <img src="images/james-honey/image-honey-4.png" alt="" />
+        <img src="images/james-honey/image-honey-5.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/james-honey/image-honey-6.png" alt="" />
+    </div>
+    <footer>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
+    </footer>
+  </div>
+
+
+  <!-- CASE: HOOKS CRAFTED LEATHER ───────────── -->
+  <div id="case-hooks" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
+    </div>
+    <div class="case-hero">
+      <span class="section-label">Photography · Videography</span>
+      <h1>Hooks Crafted<br>Leather</h1>
+      <p class="case-desc">We created a short promotional video for Hooks Crafted Leather to highlight the craftsmanship, detail, and character behind their handmade leather goods. Our goal was to tell the story of the brand through close-up process shots, rich textures, natural movement, and a warm visual style that reflects the quality of their work — from filming to final edit.</p>
+    </div>
+    <div class="case-images">
+      <div class="case-video-wrapper">
+        <button class="video-facade" data-video-id="CKrAoJlyqGo" aria-label="Play video">
+          <img src="https://img.youtube.com/vi/CKrAoJlyqGo/maxresdefault.jpg" alt="Hooks Crafted Leather promo video" />
+          <span class="video-play-icon"></span>
+        </button>
+      </div>
+      <div class="case-img-grid">
+        <img src="images/hooks/hooks-still.jpg" alt="" />
+        <img src="images/hooks/hooks-still-2.jpg" alt="" />
+      </div>
+      <div class="case-img-grid">
+        <img src="images/hooks/image-hooks-1.jpg" alt="" />
+        <img src="images/hooks/image-hooks-2.jpg" alt="" />
+      </div>
+      <div class="case-img-grid">
+        <img src="images/hooks/image-hooks-3.jpg" alt="" />
+        <img src="images/hooks/image-hooks-4.jpg" alt="" />
+      </div>
+      <img class="case-img-full" src="images/hooks/image-hooks-5.jpg" alt="" />
+    </div>
+    <footer>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
+    </footer>
+  </div>
+
+
+  <!-- CASE: THE HONEY HOLE ───────────────────── -->
+  <div id="case-honey-hole" class="case-page">
+    <div class="case-nav">
+      <button class="back-btn" data-page="work">← Back to Work</button>
+    </div>
+    <div class="case-hero">
+      <span class="section-label">Branding</span>
+      <h1>The Honey<br>Hole</h1>
+      <p class="case-desc">For The Honey Hole, I created a warm and playful brand identity for a mobile beer and wine bar serving weddings and private events. The project included logo design, bee-inspired supporting graphics, color palette, and a brand guide layout. The final identity gives the business a memorable, event-ready presence across both physical and digital touchpoints.</p>
+    </div>
+    <div class="case-images">
+      <img class="case-img-full" src="images/the-honey-hole/image-15.png" alt="" />
+      <div class="case-img-grid">
+        <img src="images/the-honey-hole/image-16.png" alt="" />
+        <img src="images/the-honey-hole/image-17.png" alt="" />
+      </div>
+      <img class="case-img-full" src="images/the-honey-hole/image-18.png" alt="" />
+      <img class="case-img-full" src="images/the-honey-hole/image-03.png" alt="" />
+    </div>
+    <footer>
+      <a href="mailto:olivernewton94@gmail.com">olivernewton94@gmail.com</a>
+      <span>© 2026 Oliver Thompson</span>
+    </footer>
+  </div>
+
 
   <script src="main.js"></script>
 </body>
